@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2 class="title">Generate a Password</h2>
+        </div>
+        <h3 class="card-body" id="passwordDisplay">
+        
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+            ></textarea>
+          </h3>
+
+       
+        <form id="passwordgeneratorform" class="form">
+
+          <label for="numberofcharacters">Number Of Characters</label>
+          <div class="number-of-characters">
+            <input type="range" min="8" max="128" value="8" id="rangeofcharacters">
+            <input class="number-input" type="number" min="8" max="128" value="8" id="numberofcharacters">
+
+          </div>
+         
+
+          <label for="Includeuppercase">Include Uppercase</label>
+          <input type="checkbox" id="Includeuppercase">
+
+          <label for="Includelowercase">Include Lowercase</label>
+          <input type="checkbox" id="Includelowercase">
+
+          <label for="Includenumber">Include Number</label>
+          <input type="checkbox" id="Includenumber">
+
+          <label for="Includespecialcharackter">Include Special Charackter</label>
+          <input type="checkbox" id="Includespecialcharackter">
+
+        </form>
+
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
