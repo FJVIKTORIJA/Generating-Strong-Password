@@ -29,9 +29,9 @@
        
         <form id="passwordgeneratorform" class="form">
 
-          <label for="charackteramoutrange">Number Of Characters</label>
+          <label for="characteramoutrange">Number Of Characters</label>
           <div class="number-of-characters">
-            <input type="range" min="8" max="128" value="10" id="characteramoutrange">
+            <!-- <input type="range" min="8" max="128" value="10" id="characteramoutrange"> -->
             <input class="number-input" type="number" min="8" max="128" value="10" id="characteramoutnumber">
 
           </div>
@@ -46,11 +46,11 @@
           <label for="Includespecialcharacter">Include Special Charackter</label>
           <input type="checkbox" id="Includespecialcharacter">
 
+          <div class="card-footer">
+            <button id="generate" class="btn" type="submit">Generate Password</button>
+          </div>
         </form>
 
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
       </div>
     </div>
     <script src="script.js"></script>
