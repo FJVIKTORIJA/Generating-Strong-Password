@@ -17,40 +17,45 @@
           <h2 class="title">Generate a Password</h2>
         </div>
         <h3 class="card-body" id="passwordDisplay">
-        
           <textarea
             readonly
             id="password"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
-            ></textarea>
-          </h3>
+          ></textarea>
+        </h3>
 
-       
         <form id="passwordgeneratorform" class="form">
-
           <label for="characteramoutrange">Number Of Characters</label>
           <div class="number-of-characters">
             <!-- <input type="range" min="8" max="128" value="10" id="characteramoutrange"> -->
-            <input class="number-input" type="number" min="8" max="128" value="10" id="characteramoutnumber">
-
+            <input
+              class="number-input"
+              type="number"
+              min="8"
+              max="128"
+              value="10"
+              id="characteramoutnumber"
+            />
           </div>
-         
 
           <label for="Includeuppercase">Include Uppercase</label>
-          <input type="checkbox" id="Includeuppercase">
+          <input type="checkbox" id="Includeuppercase" />
 
           <label for="Includenumber">Include Number</label>
-          <input type="checkbox" id="Includenumber">
+          <input type="checkbox" id="Includenumber" />
 
-          <label for="Includespecialcharacter">Include Special Charackter</label>
-          <input type="checkbox" id="Includespecialcharacter">
+          <label for="Includespecialcharacter"
+            >Include Special Charackter</label
+          >
+          <input type="checkbox" id="Includespecialcharacter" />
 
           <div class="card-footer">
-            <button id="generate" class="btn" type="submit">Generate Password</button>
+            <button id="generate" class="btn" type="submit">
+              Generate Password
+            </button>
           </div>
         </form>
-
       </div>
     </div>
     <script src="script.js"></script>
